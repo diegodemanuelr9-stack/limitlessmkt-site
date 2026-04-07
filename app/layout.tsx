@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Outfit } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
+const poppins = Poppins({
   variable: "--font-body",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 });
 
-const cormorant = Cormorant_Garamond({
+const poppinsDisplay = Poppins({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["700", "800", "900"],
   style: ["normal", "italic"],
 });
 
@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${poppins.variable} ${poppinsDisplay.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-black text-[#e5e2e1]">{children}</body>
     </html>
