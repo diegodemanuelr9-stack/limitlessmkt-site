@@ -34,8 +34,8 @@ export function Nav() {
         style={{ borderBottom: scrolled ? "1px solid rgba(231,192,144,0.05)" : "none" }}
       >
         <div className="flex justify-between items-center max-w-[1440px] mx-auto px-6 md:px-12 py-5">
-          {/* Logo */}
-          <a href="#" aria-label="LimitlessMKT Home">
+          {/* Logo + brand name */}
+          <a href="#" aria-label="LimitlessMKT Home" className="flex items-center gap-3">
             <Image
               src="/logo.png"
               alt="LimitlessMKT"
@@ -44,6 +44,9 @@ export function Nav() {
               className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity"
               priority
             />
+            <span className="font-body text-[11px] font-bold uppercase tracking-[0.2em] text-[#e5e2e1]/70 hover:text-[#e7c090] transition-colors duration-300">
+              LimitlessMKT
+            </span>
           </a>
 
           {/* Desktop nav links */}
