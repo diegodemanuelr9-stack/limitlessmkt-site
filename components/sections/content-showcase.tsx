@@ -28,7 +28,7 @@ function MockCard({ label }: { label: string }) {
 }
 
 export function ContentShowcase() {
-  const [activeCategory, setActiveCategory] = useState<ContentCategory>("special");
+  const [activeCategory, setActiveCategory] = useState<ContentCategory>("action");
   const [lightbox, setLightbox] = useState<ContentItem | null>(null);
 
   const filtered = BLUMAKA_CONTENT.filter(
