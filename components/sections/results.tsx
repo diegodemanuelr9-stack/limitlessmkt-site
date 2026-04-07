@@ -1,8 +1,7 @@
-import { STATS, TESTIMONIAL, CLIENT_LOGOS } from "@/lib/constants";
+import { STATS, CLIENT_LOGOS } from "@/lib/constants";
 import { SectionLabel } from "@/components/ui-custom/section-label";
 import { Counter } from "@/components/ui-custom/counter";
 import { Reveal } from "@/components/ui-custom/reveal";
-import Image from "next/image";
 
 export function Results() {
   return (
@@ -29,69 +28,6 @@ export function Results() {
               />
             </Reveal>
           ))}
-        </div>
-
-        {/* Divider */}
-        <div
-          className="w-full h-px mb-24"
-          style={{ background: "rgba(78,69,59,0.15)" }}
-        />
-
-        {/* Testimonial — Patrick Copen */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Quote */}
-          <Reveal className="lg:col-span-7">
-            <div className="relative">
-              {/* Giant quote mark */}
-              <span
-                className="absolute -top-8 -left-4 font-display text-[120px] md:text-[180px] leading-none text-[#e7c090]/5 select-none pointer-events-none"
-                aria-hidden="true"
-              >
-                &ldquo;
-              </span>
-              <blockquote className="relative z-10">
-                <p className="font-display text-2xl md:text-4xl lg:text-5xl font-light italic leading-tight text-[#e5e2e1] mb-8">
-                  &ldquo;Elite performers start with a{" "}
-                  <strong className="not-italic font-bold text-[#e7c090]">
-                    stable foundation
-                  </strong>
-                  . That&apos;s why I use Blumaka NonSlip insoles every time I
-                  train.&rdquo;
-                </p>
-                <footer>
-                  <cite className="not-italic">
-                    <span className="font-body font-bold text-[#e5e2e1] text-base block">
-                      {TESTIMONIAL.name}
-                    </span>
-                    <span className="font-body text-[#d2c4b7]/50 text-xs uppercase tracking-widest">
-                      {TESTIMONIAL.title}
-                    </span>
-                  </cite>
-                </footer>
-              </blockquote>
-            </div>
-          </Reveal>
-
-          {/* Patrick image */}
-          <Reveal delay={150} className="lg:col-span-5">
-            <div className="relative overflow-hidden rounded-xl aspect-square max-w-sm mx-auto lg:mx-0">
-              <Image
-                src={TESTIMONIAL.imageSrc}
-                alt={`${TESTIMONIAL.name} — ${TESTIMONIAL.title}`}
-                width={1080}
-                height={1080}
-                className="w-full h-full object-cover"
-              />
-              {/* Vignette */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(to top, rgba(28,27,27,0.6) 0%, transparent 50%)",
-                }}
-              />
-            </div>
-          </Reveal>
         </div>
 
         {/* Brand logos — clients strip */}

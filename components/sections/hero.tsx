@@ -11,7 +11,7 @@ export function Hero() {
       {/* Full-bleed background — blurred sports photography for depth */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-pickleball.png"
+          src="/images/hero/hero-pickleball.png"
           alt=""
           fill
           aria-hidden="true"
